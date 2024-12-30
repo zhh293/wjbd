@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <style>
+        span {
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let sum = 50000;
+        while (true) {
+            let number = +prompt(`xuanze
+            yiweicun
+            2weiqu
+            3weichakan
+            4tuichu`);
+            if (number == 1) {
+                let cun1 = +prompt("请输入多少钱");
+                sum = sum + cun1;
+                alert(`你的存款还有${sum}元`);
+            }
+            else if (number == 2) {
+                let qu1 = +prompt("请输入你想要去多少钱");
+                sum = sum - qu1;
+                alert(`你还剩下${sum}元`);
+            }
+            else if (number == 3) {
+                alert(`你现在还有${sum}元`);
+            }
+            else {
+                alert(`欢迎下次光临`);
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>

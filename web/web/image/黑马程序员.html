@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        hr {
+            font-size: 9px;
+        }
+
+        span {
+            color: pink;
+            font-style: normal;
+            font-size: 9px;
+        }
+
+        #h1 {
+            color: red;
+        }
+
+        .hr {
+            color: blue;
+        }
+
+        .jiujiu {
+            display: inline-block;
+            border: 1px solid pink;
+            color: pink;
+            margin: 2px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px rgba(255, 192, 203, .4);
+            background-color: aqua;
+            text-align: left;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <a id="gold">首页</a>
+    <br>
+    <image src="../image1/123456.jpg" width="40" />新浪政务>正文
+    <h1 style="color:black; font-weight: bolder;">焦点访谈：中国底气</h1>
+    <hr><span>2023年10月23日</span><span>央视网</span> </hr>
+    <a href="http://www.qq.com" target="_blank">新浪微博</a>>正文<br>
+    <a href="#gold">回到首页</a>
+    <br>
+    <!--参数有限制-->
+    <form action="" method="get">
+        用户名：<input type="text" name="username">
+        年龄：<input type="text" name="age">
+        <input type="submit" value="提交" name="biaodan">
+    </form>
+    <br>
+    <!--参数无限制-->
+    <form action="" method="post">
+        用户名：<input type="text" name="username">
+        年龄：<input type="text" name="age">
+        <input type="submit" value="提交" name="biaodan">
+    </form>
+    <!-- <script src="../js/java细节.js"></script>-->
+</body>
+<!--可以出现多次-->
+<script>
+    //alert("hello js");
+    //niubi
+    //大括号表示代码块 if(count==3){
+    // alert(count);
+    //}
+    //window.alert()写入警告框
+    //document.write()写入html输出
+    //console.log()写入浏览器控制台
+    /*window.alert("hello");
+    document.write("hello");
+    console.log("hello");*/
+    //用var关键字来声明变量，变量可以存放不同类型的值
+    //变量名数字不能开头，建议使用驼峰命名法
+    //作用域比较大，全局变量
+    //可以重复定义
+    /*{
+        var x=1;
+        var x='A';
+    }
+    alert(x);*/
+    /*var a = 10;
+    a = "张三";
+    alert(a);*/
+    //let:局部变量，不能重复定义
+    /*{
+        let x = 1;
+        alert(x);
+    }
+    alert(x);*/
+    //const:常量，不能被改变的
+    /*const pi = 3.14;
+    pi=3.15;
+    alert(pi);*/
+    //原始类型和引用数据类型
+    /*number,string,boolean,null,undefined*/
+    //typeof可以测数据的类型
+    /*var a = 20;
+    alert(typeof a);*/
+    //==会进行类型转化，===不会进行类型转化
+    /* var a = 10;
+     var b = '10';
+     alert(a == '10');
+     alert(a === '10');
+     alert(b === '10');*/
+    //将字符串字面值转为数字，如果字面值不是数字，则转化为NAN
+    /* alert(parseInt('12'));
+     alert(parseInt('12a45'));
+     alert(parseInt('a15'));*/
+    //其他类型转化为布尔类型
+    /*number:0和NaN为false，其他转化为true
+    string：空字符串为false，其他转化为true
+    null和undefined均转化为false*/
+    /*if (0) {
+        alert("heihei");
+    }
+    if (NaN) {
+        alert("heihei");
+    }
+    if (1) {
+        alert("heihei");
+    }
+    if(""){
+        alert("heihei");
+    }
+    if(null){
+        alert("heihei");
+    }
+    if(undefined){
+        alert("heihei");
+    }*/
+    //支持流程控制语句,if-else,switch,for,while,do-while
+    //js函数
+    //通过function关键字进行定义，语法为function name(){需要执行的函数}、
+    //形参不需要类型，返回值也不需要定义类型
+    //调用方法：函数名称(实际参数列表)
+    /*function add(a,b){
+        return a+b;
+    }
+    result=add(1,2);
+    alert(result);*/
+    //也可以如下的写法
+    /*var add=function(a,b){
+        return a+b;
+    }
+        var result=add(1,2)
+        alert(result)*/
+    //可以传入超出形参数量的实参，但只会读取形参数量的实参
+    //js对象
+    //``这个符号太他妈重要了吧，没有这个document只能传进去变量或者一些真实值，根本无法传入标签或者动态变化的字符串
+    //666666666
+    for (let i = 1; i < 10; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write(`<span class="jiujiu">${j}✖${i}=${i * j}</span>`);
+        }
+        document.write(`<br>`);
+
+    }
+
+</script>
+
+</html>

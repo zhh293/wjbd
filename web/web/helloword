@@ -1,0 +1,41 @@
+#include <iostream>
+​ int main()
+{
+    ​ std::cout << "Hello World" << std::endl;
+    ​
+}\
+typedef struct trip{
+      int data;
+      struct trip*next;
+}op;
+int getelem(op l1,int i,int *e){
+    int j;
+    op*link;
+    link=&l1;
+    while(j<i){
+        link=link->next;
+        ++j;
+    }
+    if(j>i||link==NULL){
+        return 0;
+    }
+    *e=link->data;
+    return 1;
+}
+#include<stdio.h>
+#include<string.h>
+int main(){
+    op l1={10,NULL};
+    op l2 = {20, NULL};
+    op l3={30, NULL};
+    op l4={40, NULL};
+    l1->next=&l2;
+    l2->next=&l3;
+    l3->next=&l4;
+    int a;
+    int i=2;
+    if(getelem(l1,i,&a)){
+      printf("%d",a);
+    }
+    return 0;
+}

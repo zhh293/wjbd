@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>照片库</title>
+    <style>
+        h1 {
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+
+            text-align: center;
+        }
+
+        .de {
+            background-color: aqua;
+            color: black;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .dress {
+            font-size: larger;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>欢迎张哲闻光临我的照片库，虽然不多，但给义父一点脸</h1>
+    <div class="de">本来这里说想用表格标签来弄出一个陈列的效果，结果发现实力不允许，草</div>
+    <img src="../image1/9.jpg"><br>
+    <img src="../image1/8.jpg"><br>
+    <img src="../image1/7.jpg"><br>
+    <img src="../image1/6.jpg"><br>
+    <img src="../image1/5.jpg"><br>
+    <img src="../image1/4.jpg"><br>
+    <img src="../image1/3.jpg"><br>
+    <img src="../image1/2.jpg"><br>
+    <img src="../image1/1.jpg"><br>
+    <p class="dress">嘿嘿嘿，老登，懵逼了吧，没想到我还有不少的存货</p>
+    <br>
+    <p class="dress">都看到这里了，不得给我点个赞吗，嘻嘻嘻</p>
+    <form action="demo.php" method="post" name="name1">
+        评价之前写一下你的名字吧：<input type="text" name="username" value="请输入用户名" maxlength="6"> <br>
+        <!--password密码框 用户看不见输入的密码-->
+        如果你是我们的vip请输入一下密码<input type="password" name="pwd" value="请输入密码值"> <br>
+        性别：男<input type="radio" name="sex" value="男">女<input type="radio" name="sex" value="女" checked="checked">
+        <!--多选-->
+        喜欢吗：喜欢<input type="checkbox" name="dealer" value="feiwu">不喜欢<input type="checkbox" name="dealer" value="feiwu">
+        <br>
+        <!--点击提交按钮，把表单域里面的表单元素提交给后台服务器-->
+        <input type="submit" value="免费注册">
+        <input type="reset" value="重置"><br>
+        <textarea cols="50" rows="5">
+                如果不喜欢，你对这个照片库的评价是什么：
+            </textarea>
+    </form>
+</body>
+<script>
+    while (true) {
+        let name = prompt(`请输入你的姓名,
+         外来的人，你好，这是主人内心深处的秘密，
+         如果你是主人的好朋友，希望你可以严肃地看完，这是属于他的不可磨灭的记忆`);
+        if (name == "张鸿昊" || name == "张哲闻") {
+            break;
+        }
+    }
+</script>
+
+</html>
